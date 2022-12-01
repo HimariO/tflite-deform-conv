@@ -27,6 +27,7 @@ namespace custom {
 TfLiteRegistration* Register_NUMERIC_VERIFY();
 TfLiteRegistration* Register_AUDIO_SPECTROGRAM();
 TfLiteRegistration* Register_MFCC();
+TfLiteRegistration* Register_RESAMPLER();
 TfLiteRegistration* Register_DETECTION_POSTPROCESS();
 
 }  // namespace custom
@@ -359,6 +360,7 @@ BuiltinOpResolver::BuiltinOpResolver() {
   // TODO(andrewharp, ahentz): Move these somewhere more appropriate so that
   // custom ops aren't always included by default.
   AddCustom("Mfcc", tflite::ops::custom::Register_MFCC());
+  AddCustom("Resampler", tflite::ops::custom::Register_RESAMPLER());
   AddCustom("AudioSpectrogram",
             tflite::ops::custom::Register_AUDIO_SPECTROGRAM());
   AddCustom("TFLite_Detection_PostProcess",

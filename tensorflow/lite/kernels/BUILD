@@ -638,6 +638,7 @@ BUILTIN_KERNEL_SRCS = [
     "matrix_set_diag.cc",
     "maximum_minimum.cc",
     "mfcc.cc",
+    "resampler.cc",
     "mirror_pad.cc",
     "mul.cc",
     "neg.cc",

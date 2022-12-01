@@ -28,6 +28,7 @@ namespace custom {
 TfLiteRegistration* Register_NUMERIC_VERIFY_REF();
 TfLiteRegistration* Register_AUDIO_SPECTROGRAM();
 TfLiteRegistration* Register_MFCC();
+TfLiteRegistration* Register_RESAMPLER();
 TfLiteRegistration* Register_DETECTION_POSTPROCESS();
 
 }  // namespace custom
