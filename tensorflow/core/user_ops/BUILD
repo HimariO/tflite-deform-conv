@@ -27,3 +27,10 @@ cc_library(
     deps = ["//tensorflow/core:framework"],
     alwayslink = 1,
 )
+
+load("//tensorflow:tensorflow.bzl", "tf_custom_op_library")
+
+tf_custom_op_library(
+    name = "resampler.so",
+    srcs = ["resampler.cc"],
+)
